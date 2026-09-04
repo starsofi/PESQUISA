@@ -13,39 +13,91 @@
     </header>
 
     <h2>O que é Front-End?</h2>
-    <p>O Front-End está completamente interligado com a parte gráfica do projeto, onde o usuário interagirá de forma direta.Desse modo, é crucial que o atuador da área se preocupe em manter um visual.
-        Pessoas que trablham nesse ramo são chamados de Dev Front-End, e a principal diferença entre um Dev Front-End e um Designer gráfico é que o desenvolvedor não tem formação profissional</p>
-    <h2>O que é Back,-End?</h2>
-    <p></p>
+    <p>O Front-End está completamente interligado com a parte gráfica do projeto, onde o usuário interagirá de forma direta. Desse modo, é crucial que o atuador da área se preocupe em manter o visual do projeto, justamente por ser o rosto, vai fazer as pessoas se interessarem ou não.
+        Pessoas que trablham nesse ramo são chamados de Dev Front-End, e a principal diferença entre um Dev Front-End e um Designer gráfico é que o desenvolvedor não tem formação profissional em design, ele faz faz tudo por linha de comando.</p>
+    <h2>O que é Back-End?</h2>
+    <p>O back-end é o motor invisível de um site ou aplicativo, responsável por processar a lógica, garantir a segurança e gerenciar o banco de dados nos servidores. Os profissionais que constroem e mantêm essa estrutura oculta são chamados de desenvolvedores back-end, programadores back-end ou engenheiros de software back-end.</p>
     <h2>Qual a diferença entre eles?</h2>
-    <p></p>
-    <h2>Qual papel cada um designa?</h2>
-    <p></p>
-    <h2>Como Front-End e Back-End se comunicam?</h2>
-    <p></p>
-    <h2>Onde o Back-End é executado?</h2>
-    <p></p>
+    
 
-    <section>
-        <h2>O que é necessário para que ocorra o bom funcionamento do Back-End?</h2>
-<p>Cliente e servidor;
-Requisição e resposta;
-HTTP e HTTPS;
-Servidor Web;
-Regras de negócio;
-Validação de dados;
-Processamento no servidor.
-Explique o que acontece quando um usuário realiza uma ação em um site, desde a solicitação até o retorno da resposta.</p>
-    </section>
+        <table>
+        <thead>
+            <tr>
+                <th>Critério</th>
+                <th>Frontend</th>
+                <th>Backend</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>O que é?</strong></td>
+                <td>A interface gráfica com o usuário.</td>
+                <td>A estrutura interna de dados.</td>
+            </tr>
+            <tr>
+                <td><strong>Onde roda?</strong></td>
+                <td>No navegador do usuário.</td>
+                <td>Em servidores na nuvem.</td>
+            </tr>
+            <tr>
+                <td><strong>Tecnologias</strong></td>
+                <td>HTML, CSS, JavaScript.</td>
+                <td>Python, Node.js, PHP, SQL.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Qual papel cada um designa?</h2>
+    <p>O Front-End designa o papel de criar o layout, os botões e a interatividade visual da página. Já o Back-End assume a responsabilidade de validar logins, salvar cadastros e garantir a segurança das informações.</p>
+
+    <h2>Como Front-End e Back-End se comunicam?</h2>
+    <p>Eles se comunicam através de requisições e respostas usando APIs. Quando você clica em um botão na tela (Front-End), uma mensagem é enviada ao servidor (Back-End), que processa o pedido e devolve o resultado.</p>
+
+    <h2>Onde o Back-End é executado?</h2>
+    <p>O Back-End é executado exclusivamente no lado do servidor. Isso significa que ele roda em máquinas remotas ou serviços de nuvem seguros, e nunca diretamente no navegador do usuário final.</p>
+
+<section>
+    <h2>O que é necessário para que ocorra o bom funcionamento do Back-End?</h2>
+    
+    <ul>
+        <li><strong>Cliente e servidor:</strong> O cliente (navegador/app) faz os pedidos e o servidor processa e guarda os dados.</li>
+        <li><strong>Requisição e resposta:</strong> É a comunicação entre eles; o cliente pede (requisição) e o servidor devolve o resultado (resposta).</li>
+        <li><strong>HTTP e HTTPS:</strong> Os protocolos (regras e caminhos seguros) usados para enviar as informações pela internet.</li>
+        <li><strong>Servidor Web:</strong> O software ou máquina que fica ligada 24h recebendo os acessos e gerenciando os arquivos do site.</li>
+        <li><strong>Regras de negócio:</strong> A lógica principal do sistema (ex: calcular descontos, validar senhas, aprovar pagamentos).</li>
+        <li><strong>Validação de dados:</strong> Checagem de segurança para garantir que as informações enviadas pelo usuário estão corretas e seguras.</li>
+        <li><strong>Processamento no servidor:</strong> A execução dos códigos nos bastidores que calcula e gera o que o usuário precisa ver.</li>
+    </ul>
+
+    <h3>Explicação do ciclo (da solicitação ao retorno da resposta):</h3>
+    <ol>
+        <li><strong>O Clique (Solicitação):</strong> O usuário clica em algo no site. O navegador (Cliente) cria um pacote com esse pedido e envia pela internet (Requisição HTTP).</li>
+        <li><strong>A Chegada:</strong> O Servidor Web recebe esse pedido e passa para o código do Back-End.</li>
+        <li><strong>O Trabalho (Processamento):</strong> O Back-End roda as regras de negócio, valida se os dados estão certos e busca o que precisar no banco de dados.</li>
+        <li><strong>A Volta (Resposta):</strong> O Back-End finaliza o cálculo, monta uma resposta (dados ou uma mensagem) e envia de volta ao navegador.</li>
+        <li><strong>O Resultado:</strong> O navegador lê essa resposta e mostra a atualização na tela do usuário.</li>
+    </ol>
+</section>
 
 
 <section>
-    <h2>APIs:O que são e qual sua funcionalidade?</h2>
-O que é uma API?
-Para que serve?
-O que é API REST?
-O que são endpoints?
-Como o Front-End utiliza uma API?
+<h2>APIs:O que são e qual sua funcionalidade?</h2>
+<p><strong> O que é uma API?</strong></p>
+<p>Uma API é uma ponte que permite que dois sistemas diferentes conversem entre si. Ela funciona como um intermediário que envia o pedido de um aplicativo para o servidor e traz a resposta de volta.Um exemplo prático é quando você faz login em um site usando o seu botão do Google ou do Facebook. O site não sabe a sua senha; ele apenas usa a API dessas plataformas para confirmar que você é você.</p>
+
+<p><strong>Para que serve?</strong></p> 
+<p>A API serve para conectar sistemas diferentes, permitindo que eles compartilhem dados e funções prontas com segurança e agilidade. Na prática, ela evita que o desenvolvedor precise recriar ferramentas do zero (como sistemas de pagamento, mapas ou logins sociais) e garante que o Front-End consiga buscar ou salvar informações no Back-End em tempo real.</p>
+
+<p><strong>O que é API REST?</strong></p>
+<p>A API REST é um modelo que usa os comandos padrão da própria internet (o protocolo HTTP) para organizar a comunicação entre sistemas de forma simples, leve e padronizada. Ela funciona através de rotas claras e verbos específicos — como GET para buscar um dado, POST para criar, PUT para atualizar e DELETE para apagar —, garantindo que qualquer Front-End consiga conversar perfeitamente com o Back-End.</p>
+
+ <p><strong> O que são endpoints?</strong></p> 
+<p>Endpoints são as URLs ou endereços específicos de uma API onde o Front-End envia os pedidos para acessar, criar ou alterar um dado no servidor. Eles funcionam como os "pontos de encontro" da comunicação; por exemplo, o endereço ://meusite.com é o endpoint usado especificamente para buscar a lista de produtos cadastrados.</p>
+
+<p><strong>Como o Front-End utiliza uma API?</strong></p>
+<p>O Front-End utiliza uma API enviando requisições HTTP para os seus endpoints através de funções do JavaScript, como o fetch ou a biblioteca axios. Quando o Front-End faz esse pedido, ele recebe de volta uma resposta do servidor (geralmente em formato JSON, que é um formato de texto leve) e usa esses dados recebidos para atualizar e renderizar as informações dinamicamente na tela do usuário.</p>
+
+
 
 
 
@@ -106,7 +158,7 @@ Como o Front-End utiliza uma API?
 
 
 <section>
-  <h2>4. Tecnologias Back-End</h2>
+  <h2>Tecnologias Back-End</h2>
   
   <table>
     <thead>
