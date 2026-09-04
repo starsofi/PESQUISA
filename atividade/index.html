@@ -3,218 +3,225 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site informativo</title>
-    <link rel="stylesheet" href="CSS/style.css">
+    <title>Desenvolvimento Web: Front-End e Back-End</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-    <h1>Front-End e Back-End</h1>
-    <p>Seja muito bem-vindo à nossa página de pesquisa sobre Desenvolvimento Web! Este site foi criado com o objetivo de explorar o universo do Back-End — a estrutura escondida que processa os dados, gerencia a segurança e dita as regras de funcionamento dos sistemas na internet. Navegue pelas seções para compreender a diferença entre cliente e servidor, o papel das APIs na comunicação de dados e as principais tecnologias que movem a web por trás das telas.</p>
+
+    <header class="hero">
+        <h1>Front-End & Back-End</h1>
+        <p class="subtitulo">A estrutura, comunicação e arquitetura por trás dos sistemas web.</p>
+        
+        <nav class="menu-navegacao">
+            <a href="#frontend">Front-End</a>
+            <a href="#backend">Back-End</a>
+            <a href="#diferenca">Comparativo</a>
+            <a href="#funcionamento">Ciclo Web</a>
+            <a href="#apis">APIs</a>
+            <a href="#tecnologias">Tecnologias</a>
+        </nav>
     </header>
 
-    <h2>O que é Front-End?</h2>
-    <p>O Front-End está completamente interligado com a parte gráfica do projeto, onde o usuário interagirá de forma direta. Desse modo, é crucial que o atuador da área se preocupe em manter o visual do projeto, justamente por ser o rosto, vai fazer as pessoas se interessarem ou não.
-        Pessoas que trablham nesse ramo são chamados de Dev Front-End, e a principal diferença entre um Dev Front-End e um Designer gráfico é que o desenvolvedor não tem formação profissional em design, ele faz faz tudo por linha de comando.</p>
-    <h2>O que é Back-End?</h2>
-    <p>O back-end é o motor invisível de um site ou aplicativo, responsável por processar a lógica, garantir a segurança e gerenciar o banco de dados nos servidores. Os profissionais que constroem e mantêm essa estrutura oculta são chamados de desenvolvedores back-end, programadores back-end ou engenheiros de software back-end.</p>
-    <h2>Qual a diferença entre eles?</h2>
-    
+    <main class="container">
 
-        <table>
-        <thead>
-            <tr>
-                <th>Critério</th>
-                <th>Frontend</th>
-                <th>Backend</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><strong>O que é?</strong></td>
-                <td>A interface gráfica com o usuário.</td>
-                <td>A estrutura interna de dados.</td>
-            </tr>
-            <tr>
-                <td><strong>Onde roda?</strong></td>
-                <td>No navegador do usuário.</td>
-                <td>Em servidores na nuvem.</td>
-            </tr>
-            <tr>
-                <td><strong>Tecnologias</strong></td>
-                <td>HTML, CSS, JavaScript.</td>
-                <td>Python, Node.js, PHP, SQL.</td>
-            </tr>
-        </tbody>
-    </table>
+        <div class="grade-cards">
+            <section id="frontend" class="card card-destaque">
+                <span class="categoria-tag">CLIENT-SIDE</span>
+                <h2>O que é Front-End?</h2>
+                <p>O Front-End está completamente interligado com a parte gráfica do projeto, onde o usuário interagirá de forma direta. Desse modo, é crucial que o atuador da área se preocupe em manter o visual do projeto, justamente por ser o rosto, vai fazer as pessoas se interessarem ou não.</p>
+                <p>Pessoas que trabalham nesse ramo são chamados de Dev Front-End, e a principal diferença entre um Dev Front-End e um Designer gráfico é que o desenvolvedor não tem formação profissional em design, ele faz tudo por linha de comando.</p>
+            </section>
 
-    <h2>Qual papel cada um designa?</h2>
-    <p>O Front-End designa o papel de criar o layout, os botões e a interatividade visual da página. Já o Back-End assume a responsabilidade de validar logins, salvar cadastros e garantir a segurança das informações.</p>
+            <section id="backend" class="card card-destaque">
+                <span class="categoria-tag">SERVER-SIDE</span>
+                <h2>O que é Back-End?</h2>
+                <p>O back-end é o motor invisível de um site ou aplicativo, responsável por processar a lógica, garantir a segurança e gerenciar o banco de dados nos servidores. Os profissionais que constroem e mantêm essa estrutura oculta são chamados de desenvolvedores back-end, programadores back-end ou engenheiros de software back-end.</p>
+            </section>
+        </div>
 
-    <h2>Como Front-End e Back-End se comunicam?</h2>
-    <p>Eles se comunicam através de requisições e respostas usando APIs. Quando você clica em um botão na tela (Front-End), uma mensagem é enviada ao servidor (Back-End), que processa o pedido e devolve o resultado.</p>
+        <section id="diferenca" class="card">
+            <h2>Qual a diferença entre eles?</h2>
+            <div class="tabela-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Critério</th>
+                            <th>Frontend</th>
+                            <th>Backend</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>O que é?</strong></td>
+                            <td>A interface gráfica com o usuário.</td>
+                            <td>A estrutura interna de dados.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Onde roda?</strong></td>
+                            <td>No navegador do usuário.</td>
+                            <td>Em servidores na nuvem.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Tecnologias</strong></td>
+                            <td>HTML, CSS, JavaScript.</td>
+                            <td>Python, Node.js, PHP, SQL.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
 
-    <h2>Onde o Back-End é executado?</h2>
-    <p>O Back-End é executado exclusivamente no lado do servidor. Isso significa que ele roda em máquinas remotas ou serviços de nuvem seguros, e nunca diretamente no navegador do usuário final.</p>
+        <section class="card painel-detalhes">
+            <h2>Papeis & Execução</h2>
+            <p><strong>Qual papel cada um designa?</strong> O Front-End cria o layout, botões e a interatividade visual da página. Já o Back-End assume a responsabilidade de validar logins, salvar cadastros e garantir a segurança das informações.</p>
+            <p><strong>Como se comunicam?</strong> Eles se comunicam através de requisições e respostas usando APIs. Quando você clica em um botão na tela (Front-End), uma mensagem é enviada ao servidor (Back-End), que processa o pedido e devolve o resultado.</p>
+            <p><strong>Onde é executado?</strong> O Back-End é executado exclusivamente no lado do servidor, rodando em máquinas remotas ou serviços de nuvem seguros.</p>
+        </section>
 
-<section>
-    <h2>O que é necessário para que ocorra o bom funcionamento do Back-End?</h2>
-    
-    <ul>
-        <li><strong>Cliente e servidor:</strong> O cliente (navegador/app) faz os pedidos e o servidor processa e guarda os dados.</li>
-        <li><strong>Requisição e resposta:</strong> É a comunicação entre eles; o cliente pede (requisição) e o servidor devolve o resultado (resposta).</li>
-        <li><strong>HTTP e HTTPS:</strong> Os protocolos (regras e caminhos seguros) usados para enviar as informações pela internet.</li>
-        <li><strong>Servidor Web:</strong> O software ou máquina que fica ligada 24h recebendo os acessos e gerenciando os arquivos do site.</li>
-        <li><strong>Regras de negócio:</strong> A lógica principal do sistema (ex: calcular descontos, validar senhas, aprovar pagamentos).</li>
-        <li><strong>Validação de dados:</strong> Checagem de segurança para garantir que as informações enviadas pelo usuário estão corretas e seguras.</li>
-        <li><strong>Processamento no servidor:</strong> A execução dos códigos nos bastidores que calcula e gera o que o usuário precisa ver.</li>
-    </ul>
+        <section id="funcionamento" class="card">
+            <h2>Funcionamento do Back-End</h2>
+            
+            <ul class="lista-check">
+                <li><strong>Cliente e servidor:</strong> O cliente faz os pedidos e o servidor processa/guarda os dados.</li>
+                <li><strong>Requisição e resposta:</strong> O cliente pede (requisição) e o servidor devolve o resultado (resposta).</li>
+                <li><strong>HTTP e HTTPS:</strong> Protocolos e regras de caminhos seguros para enviar dados.</li>
+                <li><strong>Servidor Web:</strong> Máquina ou software ligado 24h recebendo os acessos.</li>
+                <li><strong>Regras de negócio:</strong> Lógica principal do sistema (descontos, senhas, pagamentos).</li>
+                <li><strong>Validação de dados:</strong> Checagem de segurança para garantir dados corretos.</li>
+                <li><strong>Processamento no servidor:</strong> Código rodando nos bastidores.</li>
+            </ul>
 
-    <h3>Explicação do ciclo (da solicitação ao retorno da resposta):</h3>
-    <ol>
-        <li><strong>O Clique (Solicitação):</strong> O usuário clica em algo no site. O navegador (Cliente) cria um pacote com esse pedido e envia pela internet (Requisição HTTP).</li>
-        <li><strong>A Chegada:</strong> O Servidor Web recebe esse pedido e passa para o código do Back-End.</li>
-        <li><strong>O Trabalho (Processamento):</strong> O Back-End roda as regras de negócio, valida se os dados estão certos e busca o que precisar no banco de dados.</li>
-        <li><strong>A Volta (Resposta):</strong> O Back-End finaliza o cálculo, monta uma resposta (dados ou uma mensagem) e envia de volta ao navegador.</li>
-        <li><strong>O Resultado:</strong> O navegador lê essa resposta e mostra a atualização na tela do usuário.</li>
-    </ol>
-</section>
+            <figure class="imagem-box">
+                <img src="https://www.researchgate.net/publication/317258084/figure/fig2/AS:500663526191104@1496378894064/Figura-2-Fluxograma-do-mecanismo-de-requisicao-e-Resposta-Cliente-Servidor.png" alt="Fluxo Cliente e Servidor"   width="500">
+                <figcaption>Figura 1: Fluxo de requisição e resposta entre o Cliente e o Servidor.</figcaption>
+            </figure>
 
+            <h3>Explicação do ciclo (da solicitação ao retorno):</h3>
+            <ol class="lista-passos">
+                <li><strong>O Clique (Solicitação):</strong> O usuário clica em algo e o navegador envia uma Requisição HTTP.</li>
+                <li><strong>A Chegada:</strong> O Servidor Web recebe o pedido e passa ao código Back-End.</li>
+                <li><strong>O Trabalho (Processamento):</strong> O Back-End executa a lógica e busca dados no banco.</li>
+                <li><strong>A Volta (Resposta):</strong> O Back-End gera e envia o resultado de volta ao navegador.</li>
+                <li><strong>O Resultado:</strong> O navegador lê a resposta e atualiza a tela.</li>
+            </ol>
+        </section>
 
-<section>
-<h2>APIs:O que são e qual sua funcionalidade?</h2>
-<p><strong> O que é uma API?</strong></p>
-<p>Uma API é uma ponte que permite que dois sistemas diferentes conversem entre si. Ela funciona como um intermediário que envia o pedido de um aplicativo para o servidor e traz a resposta de volta.Um exemplo prático é quando você faz login em um site usando o seu botão do Google ou do Facebook. O site não sabe a sua senha; ele apenas usa a API dessas plataformas para confirmar que você é você.</p>
+        <section id="apis" class="card">
+            <h2>APIs & Métodos HTTP</h2>
+            <article>
+                <p><strong>O que é uma API?</strong> Uma ponte intermediária que envia o pedido de um aplicativo para o servidor e traz a resposta de volta.</p>
+                <p><strong>Para que serve?</strong> Permite conectar sistemas diferentes e compartilhar dados com segurança.</p>
 
-<p><strong>Para que serve?</strong></p> 
-<p>A API serve para conectar sistemas diferentes, permitindo que eles compartilhem dados e funções prontas com segurança e agilidade. Na prática, ela evita que o desenvolvedor precise recriar ferramentas do zero (como sistemas de pagamento, mapas ou logins sociais) e garante que o Front-End consiga buscar ou salvar informações no Back-End em tempo real.</p>
+                <div class="bloco-codigo">
+                    <h3>Exemplo de estrutura de dados (JSON):</h3>
+                    <pre><code>
+{
+    "status": "sucesso",
+    "usuario_id": 102,
+    "funcao": "Desenvolvedor"
+}
+                    </code></pre>
+                </div>
 
-<p><strong>O que é API REST?</strong></p>
-<p>A API REST é um modelo que usa os comandos padrão da própria internet (o protocolo HTTP) para organizar a comunicação entre sistemas de forma simples, leve e padronizada. Ela funciona através de rotas claras e verbos específicos — como GET para buscar um dado, POST para criar, PUT para atualizar e DELETE para apagar —, garantindo que qualquer Front-End consiga conversar perfeitamente com o Back-End.</p>
+                <p><strong>API REST & Endpoints:</strong> A API REST utiliza protocolos HTTP e rotas claras (endpoints) para organizar as mensagens.</p>
+            </article>
 
- <p><strong> O que são endpoints?</strong></p> 
-<p>Endpoints são as URLs ou endereços específicos de uma API onde o Front-End envia os pedidos para acessar, criar ou alterar um dado no servidor. Eles funcionam como os "pontos de encontro" da comunicação; por exemplo, o endereço ://meusite.com é o endpoint usado especificamente para buscar a lista de produtos cadastrados.</p>
+            <h3 class="subtitulo-interativo">Métodos HTTP (Clique para saber mais):</h3>
+            <ul class="lista-metodos">
+                <li>
+                    <input type="checkbox" id="metodo-get" class="esconder-checkbox">
+                    <label for="metodo-get" class="palavra-clicavel"><span class="badge-metodo badge-get">GET</span> Leitura e busca de dados</label>
+                    <p class="texto-explicacao">O método GET é utilizado para realizar a busca ou leitura de informações já existentes em um servidor.</p>
+                </li>
+                <li>
+                    <input type="checkbox" id="metodo-post" class="esconder-checkbox">
+                    <label for="metodo-post" class="palavra-clicavel"><span class="badge-metodo badge-post">POST</span> Envio e criação de dados</label>
+                    <p class="texto-explicacao">O método POST serve para enviar dados novos ao servidor com o objetivo de cadastrar um registro.</p>
+                </li>
+                <li>
+                    <input type="checkbox" id="metodo-put" class="esconder-checkbox">
+                    <label for="metodo-put" class="palavra-clicavel"><span class="badge-metodo badge-put">PUT</span> Atualização completa</label>
+                    <p class="texto-explicacao">O método PUT é utilizado para atualizar ou substituir completamente todas as informações de um registro.</p>
+                </li>
+                <li>
+                    <input type="checkbox" id="metodo-patch" class="esconder-checkbox">
+                    <label for="metodo-patch" class="palavra-clicavel"><span class="badge-metodo badge-patch">PATCH</span> Atualização parcial</label>
+                    <p class="texto-explicacao">O método PATCH serve para realizar modificações parciais em campos específicos.</p>
+                </li>
+                <li>
+                    <input type="checkbox" id="metodo-delete" class="esconder-checkbox">
+                    <label for="metodo-delete" class="palavra-clicavel"><span class="badge-metodo badge-delete">DELETE</span> Remoção de dados</label>
+                    <p class="texto-explicacao">O método DELETE é enviado ao servidor para excluir de forma permanente um registro.</p>
+                </li>
+            </ul>
+        </section>
 
-<p><strong>Como o Front-End utiliza uma API?</strong></p>
-<p>O Front-End utiliza uma API enviando requisições HTTP para os seus endpoints através de funções do JavaScript, como o fetch ou a biblioteca axios. Quando o Front-End faz esse pedido, ele recebe de volta uma resposta do servidor (geralmente em formato JSON, que é um formato de texto leve) e usa esses dados recebidos para atualizar e renderizar as informações dinamicamente na tela do usuário.</p>
+        <section id="tecnologias" class="card">
+            <h2>Tecnologias Back-End</h2>
+            <div class="tabela-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Linguagem</th>
+                            <th>Características</th>
+                            <th>Vantagens</th>
+                            <th>Desvantagens</th>
+                            <th>Aplicações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Node.js</strong></td>
+                            <td>JS / TS</td>
+                            <td>Baseado na V8; assíncrono.</td>
+                            <td>Alta performance em tempo real.</td>
+                            <td>Ruim para CPU pesada.</td>
+                            <td>Streaming, Chats, APIs.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Django</strong></td>
+                            <td>Python</td>
+                            <td>Framework "baterias incluídas".</td>
+                            <td>Segurança nativa e ORM.</td>
+                            <td>Monolítico e pesado.</td>
+                            <td>Instagram, Gerenciadores.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Spring Boot</strong></td>
+                            <td>Java / Kotlin</td>
+                            <td>Foco em microsserviços.</td>
+                            <td>Altamente escalável.</td>
+                            <td>Alto consumo de memória.</td>
+                            <td>Bancos e E-commerce.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Laravel</strong></td>
+                            <td>PHP</td>
+                            <td>Sintaxe expressiva.</td>
+                            <td>Hospedagem barata.</td>
+                            <td>Menor performance relativa.</td>
+                            <td>Portais e Sistemas MVC.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>ASP.NET Core</strong></td>
+                            <td>C#</td>
+                            <td>Modular pela Microsoft.</td>
+                            <td>Velocidade extrema.</td>
+                            <td>Ecossistema fechado.</td>
+                            <td>Enterprise, Nuvem Azure.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
 
+    </main>
 
-
-    <h2>Clique abaixo para saber mais sobre os métodos utilizados:</h2>
-<ul class="lista-metodos">
-
-
-    <li>
-        <input type="checkbox" id="metodo-get" class="esconder-checkbox">
-        <label for="metodo-get" class="palavra-clicavel">GET</label>
-        <p class="texto-explicacao">
-            O método GET é utilizado para realizar a busca ou leitura de informações já existentes em um servidor.
-        </p>
-    </li>
-
-
-    <li>
-        <input type="checkbox" id="metodo-post" class="esconder-checkbox">
-        <label for="metodo-post" class="palavra-clicavel">POST</label>
-        <p class="texto-explicacao">
-            O método POST serve para enviar dados novos ao servidor com o objetivo de cadastrar ou criar um novo registro.
-        </p>
-    </li>
-
-  
-    <li>
-        <input type="checkbox" id="metodo-put" class="esconder-checkbox">
-        <label for="metodo-put" class="palavra-clicavel">PUT</label>
-        <p class="texto-explicacao">
-            O método PUT é utilizado para atualizar ou substituir completamente todas as informações de um registro existente.
-        </p>
-    </li>
-
-    
-    <li>
-        <input type="checkbox" id="metodo-patch" class="esconder-checkbox">
-        <label for="metodo-patch" class="palavra-clicavel">PATCH</label>
-        <p class="texto-explicacao">
-            O método PATCH serve para realizar modificações parciais, alterando apenas campos específicos de um registro.
-        </p>
-    </li>
-
-   
-    <li>
-        <input type="checkbox" id="metodo-delete" class="esconder-checkbox">
-        <label for="metodo-delete" class="palavra-clicavel">DELETE</label>
-        <p class="texto-explicacao">
-            O método DELETE é enviado ao servidor quando o objetivo do sistema é excluir de forma permanente um registro.
-        </p>
-    </li>
-
-</ul>
-</section>
-
-
-
-<section>
-  <h2>Tecnologias Back-End</h2>
-  
-  <table>
-    <thead>
-      <tr>
-        <th>Nome</th>
-        <th>Linguagem utilizada</th>
-        <th>Principais características</th>
-        <th>Vantagens</th>
-        <th>Desvantagens</th>
-        <th>Exemplos de utilização</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><strong>Node.js</strong></td>
-        <td>JavaScript / TypeScript</td>
-        <td>Ambiente de execução baseado no V8 do Chrome; assíncrono e orientado a eventos.</td>
-        <td>Alta performance para aplicações em tempo real; mesma linguagem no front e back.</td>
-        <td>Não é ideal para processamento pesado de CPU; gerenciamento complexo de callbacks.</td>
-        <td>Sistemas de chat, streaming (Netflix) e APIs RESTful rápidas.</td>
-      </tr>
-      <tr>
-        <td><strong>Django</strong></td>
-        <td>Python</td>
-        <td>Framework "baterias incluídas" com foco em desenvolvimento limpo e rápido.</td>
-        <td>Segurança robusta nativa; painel administrativo pronto; ORM poderoso.</td>
-        <td>Monolítico e pesado para microserviços simples; curva de aprendizado inicial.</td>
-        <td>Plataformas de conteúdo (Instagram) e sistemas gerenciadores de dados.</td>
-      </tr>
-      <tr>
-        <td><strong>Spring Boot</strong></td>
-        <td>Java / Kotlin</td>
-        <td>Framework focado em microsserviços e aplicações corporativas robustas.</td>
-        <td>Altamente escalável; ecossistema gigante; segurança de tipos forte.</td>
-        <td>Consumo de memória elevado; configuração inicial complexa e verbosa.</td>
-        <td>Sistemas bancários, e-commerce de grande porte e sistemas de logística.</td>
-      </tr>
-      <tr>
-        <td><strong>Laravel</strong></td>
-        <td>PHP</td>
-        <td>Framework com sintaxe expressiva e elegante; foco na experiência do desenvolvedor.</td>
-        <td>Documentação excelente; sistema de autenticação nativo; hospedagem barata.</td>
-        <td>Performance inferior a ambientes compilados; pode encorajar códigos bagunçados.</td>
-        <td>Aplicações MVC tradicionais, portais institucionais e SaaS de médio porte.</td>
-      </tr>
-      <tr>
-        <td><strong>ASP.NET Core</strong></td>
-        <td>C#</td>
-        <td>Framework modular de alta performance desenvolvido pela Microsoft.</td>
-        <td>Velocidade extrema; excelente suporte empresarial; integração nativa com nuvem Azure.</td>
-        <td>Dependência forte do ecossistema Microsoft; curva de aprendizado para iniciantes.</td>
-        <td>Aplicações corporativas enterprise, APIs escaláveis e microsserviços em nuvem.</td>
-      </tr>
-    </tbody>
-  </table>
-</section>
-
-
-
-
-
+    <footer class="rodape">
+        <p><strong>Fontes & Referências:</strong> MDN Web Docs | DevMedia | Documentações Técnicas</p>
+        <p>&copy; Projeto de Desenvolvimento de Sistemas - 2º Semestre.</p>
+    </footer>
 
 </body>
 </html>
